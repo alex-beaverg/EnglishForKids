@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin-top: 60px;
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+.header_class {  
+    display: flex;  
+    height: 30px;    
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+.score_class {  
+    display: flex;  
+    height: 30px;
+    color:  rgb(68, 194, 18);   
+    margin-bottom: 30px;
+    justify-content: flex-end;
+    align-content: flex-end;
+    overflow: hidden;
+}
+.burger_container_class {
+    height: 30px;
+    width: 30px;    
+}
+.play_train_container_class {
+    display: flex;
+    justify-content: flex-end;
+    height: 30px;
+    width: 120px;
+    background: rgb(104, 106, 212);
+    border-radius: 5px;    
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 4px;    
+    color: white;
+    transition: background 0.5s;
+}
+.play_train_play_container_class {
+    display: flex;
+    justify-content: flex-end;
+    height: 30px;
+    width: 120px;
+    background: rgb(68, 194, 18);
+    border-radius: 5px;    
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 4px;    
+    color: white;
+    transition: background 0.5s;
+}
+.play_train_container_class:hover {
+    cursor: pointer;   
+    background: rgb(154, 155, 233); 
+}
+.play_train_play_container_class:hover {
+    cursor: pointer;
+    background: rgb(148, 245, 109);
+}
+.play_train_text_class {    
+    width: 90px;
+    height: 30px;    
+    line-height: 30px;
+    text-align: center;
+}
+.play_train_button_class {
+    display: flex;       
+    justify-content: center;
+    align-items: center; 
+    width: 26px;
+    height: 26px;
+    background: white;
+    border-radius: 4px;
+    margin: 2px;
+}
+.play_train_button_pimpochka_class {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: crimson;
+}
+.card_field_class {
+    position: relative;
+    display: flex;     
+    flex-wrap: wrap;     
+    align-items: flex-start;      
+}
+.cell_class {
+    position: relative;
+    width: 275px;
+    height: 250px;
+    margin-bottom: 30px;      
+}
+.card_class {      
+    display: flex;   
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+    width: 275px;
+    height: 250px;
+    color: rgb(0, 0, 0);      
+    border-radius: 5px;    
+    box-shadow: 0 0 5px rgba(26, 100, 146, 0.75);   
+    background: linear-gradient(180deg,#636dfd,#6be1fe 40%,#fff 0,#fff);
+    margin-bottom: 30px; 
+}
+.new_card_class { 
+    position: absolute;       
+    display: flex;   
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+    width: 275px;
+    height: 250px;
+    color: rgb(0, 0, 0);      
+    border-radius: 5px;    
+    box-shadow: 0 0 5px rgba(26, 100, 146, 0.75);
+}
+.new_card_r_class {     
+    visibility: hidden;
+    transform: scale(0, 1);
+    position: absolute;       
+    display: flex;   
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+    width: 275px;
+    height: 250px;
+    color: rgb(0, 0, 0);      
+    border-radius: 5px;    
+    box-shadow: 0 0 5px rgba(26, 100, 146, 0.75);
+}
+.card_play_class {            
+    display: flex;   
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+    width: 275px;
+    height: 250px;
+    color: rgb(0, 0, 0);      
+    border-radius: 5px;    
+    box-shadow: 0 0 5px rgba(74, 146, 26, 0.75);   
+    background: linear-gradient(180deg,#2cd609,#c2ff72 40%,#fff 0,#fff);
+}
+.new_card_play_class {        
+    display: flex;   
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+    width: 275px;
+    height: 250px;
+    color: rgb(0, 0, 0);      
+    border-radius: 5px;    
+    box-shadow: 0 0 5px rgba(74, 146, 26, 0.75);    
+}
+.card_class:hover {
+    box-shadow: 0 0 15px rgba(26, 100, 146, 0.75);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.new_card_class:hover {
+    box-shadow: 0 0 15px rgba(26, 100, 146, 0.75);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.card_play_class:hover {
+    box-shadow: 0 0 15px rgba(74, 146, 26, 0.75);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.new_card_play_class:hover {
+    box-shadow: 0 0 15px rgba(74, 146, 26, 0.75);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+@media (min-width: 1291px) {
+    .header_class {
+        width: 1190px;        
+    }   
+    .score_class {
+        width: 1175px;        
+    }
+    .card_field_class {
+        width: 1190px;
+        height: 560px;
+        justify-content: space-between;
+    }    
+}
+@media (min-width: 986px) and (max-width: 1290px) {
+    .header_class, .score_class {
+        width: 885px;        
+    }
+    .card_field_class {
+        width: 885px;
+        height: 840px;
+        justify-content: center;        
+    }  
+    #card_1, #card_2, #card_4, #card_5, #card_7 {
+        margin-right: 30px;
+    }  
+}
+@media (min-width: 681px) and (max-width: 985px) {
+    .header_class {
+        width: 580px;        
+    }
+    .score_class {
+        width: 575px;        
+    }
+    .card_field_class {
+        width: 580px;
+        height: 1120px;
+        justify-content: space-between;
+    } 
+    .stat_table_class {
+        font-size: 0.75rem;
+    }   
+}
+@media (max-width: 680px) {
+    .header_class {
+        width: 275px;        
+    }
+    .score_class {
+        width: 265px;        
+    }
+    .card_field_class {
+        width: 275px;
+        height: 2240px;
+        justify-content: space-between;
+    } 
+    .card_field_class {        
+        height: 1240px;        
+    } 
+    .stat_table_class {
+        font-size: 0.6rem;
+    }   
+}
+.card_image_class {
+    width: 120px;
+    height: 120px;
+    border: 10px solid white;
+    object-fit: cover;
+    border-radius: 120px;
+    margin-bottom: 15px;
+}
+.train_card_image_class {
+    width: 275px;
+    height: 200px;    
+    object-fit: cover;  
+    border-radius: 5px 5px 0 0;  
+    margin-bottom: 7px;
+}
+.train_card_r_image_class {
+    width: 275px;
+    height: 200px;    
+    object-fit: cover;  
+    border-radius: 5px 5px 0 0;  
+    margin-bottom: 7px;
+}
+.play_card_image_class {
+    width: 275px;
+    height: 250px;    
+    object-fit: cover;  
+    border-radius: 5px;     
+}
+.card_text_class {
+    font-family: Roboto;
+    font-size: 24px;    
+}
+.train_card_text_class {
+    height: 50px;
+    font-family: Roboto;
+    font-size: 24px;    
+}
+.train_card_r_text_class {
+    height: 50px;
+    font-family: Roboto;
+    font-size: 24px;    
+}
+#menu_toggle_id {
+    position: absolute;
+    opacity: 0;
+}
+.menu_btn_class {
+    display: flex;
+    align-items: center;
+    position: relative;    
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1;
+}    
+.menu_btn_class > span,
+.menu_btn_class > span::before,
+.menu_btn_class > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #9e9e9e;  
+    transition: all 0.5s;
+}
+.menu_btn_class:hover > span,
+.menu_btn_class:hover > span::before,
+.menu_btn_class:hover > span::after{    
+    background-color: #474747;  
+    transition: all 0.3s;
+}
+.menu_btn_class > span::before {
+    content: '';
+    top: -10px;  
+}
+.menu_btn_class > span::after {
+    content: '';
+    top: 10px;  
+}
+.menu_box_class {
+    display: flex;
+    flex-direction: column;  
+    flex-wrap: wrap; 
+    padding-top: 100px; 
+    align-content: center;
+    position: fixed;    
+    top: 0;
+    left: -320px;
+    width: 320px;
+    height: 100%;    
+    list-style: none;  
+    color: white;
+    background: #005eb6;
+    font-family: Roboto;
+    font-size: 22px;
+    line-height: 50px;
+    z-index: 100;
+    transform: translateX(-320px);
+    transition: all 0.5s; 
+}
+.cover_class {    
+    position: fixed;    
+    top: 0;
+    left: -1600px;
+    width: 1600px;
+    height: 100%;
+    background: rgba(74, 146, 26, 0);    
+    z-index: 50;
+    transform: translateX(-1920px);
+    transition: all 0.5s; 
+}
+#menu_toggle_id:checked ~ .menu_btn_class > span {    
+    background: rgba(255, 255, 255, 0);
+}
+#menu_toggle_id:checked ~ .menu_btn_class > span::before {
+    top: 0;
+    transform: rotate(-45deg);
+    transition: all 0.5s;
+}
+#menu_toggle_id:checked ~ .menu_btn_class > span::after {
+    top: 0;
+    transform: rotate(45deg);
+    transition: all 0.5s;       
+}
+#menu_toggle_id:checked ~ .menu_box_class {
+    transform: translateX(320px);
+    transition: all 0.5s;
+}
+#menu_toggle_id:checked ~ .cover_class {
+    transform: translateX(1920px);
+    transition: all 0.5s;
+}
+#menu_toggle_id:checked ~ .menu_btn_class {
+    z-index: 900;
+}
+.menu_item_class:hover {
+    cursor: pointer;    
+}
+.rotate_class {
+    position: absolute;
+    top: 215px;
+    left: 240px;
+}
+.rotate_class:hover {
+    cursor: pointer;    
+    transition: all 0.5s;   
+    color: rgb(93, 93, 255);
+}
+.start_game_class {
+    width: 100%;
+    height: 50px;    
+    visibility: hidden;  
+    background: rgb(68, 194, 18);
+    border-radius: 5px; 
+    border: 0;
+    outline: none;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 4px;    
+    color: white;
+    margin-bottom: 30px;  
+    transition: all 0.3s;   
+}
+.start_game_class:hover {
+    cursor: pointer;
+    background: rgb(148, 245, 109);
+    color: rgb(38, 134, 0);  
+}
+.repeat_class {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: 50px;
+    height: 50px;    
+    background: rgb(68, 194, 18);
+    border-radius: 50px; 
+    border: 0;
+    outline: none;    
+    font-weight: 400;  
+    font-size: 30px;       
+    color: white; 
+    transition: all 0.3s;
+    margin-bottom: 30px;    
+}
+.repeat_class:hover {
+    cursor: pointer;
+    background: rgb(148, 245, 109);
+    color: rgb(38, 134, 0);  
+}
+.repeat_butt_class {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: 50px;
+    height: 50px;    
+    background: rgb(68, 194, 18);
+    border-radius: 50px; 
+    border: 0;
+    outline: none;    
+    font-weight: 400;  
+    font-size: 30px;       
+    color: white; 
+    transition: all 0.3s; 
+    margin-bottom: 30px; 
+    padding-top: 3px;   
+}
+.repeat_butt_class:hover {
+    cursor: pointer;
+    background: rgb(148, 245, 109);
+    color: rgb(38, 134, 0);  
+}
+.reset_stat_class {
+    position: absolute;
+    right: 0%;
+    height: 30px;
+    width: 60px;
+    margin-top: -120px;
+    outline: none; 
+    border: 0;
+    border-radius: 5px;
+    font-weight: 400;  
+    font-size: 15px;
+    color: white; 
+    transition: all 0.3s; 
+    background: rgb(68, 194, 18);
+    font-family: Roboto;
+}
+.reset_stat_class:hover {
+    cursor: pointer;
+    background: rgb(148, 245, 109);
+    color: rgb(38, 134, 0);    
+}
+.repeat_diff_words_class {
+    position: absolute;
+    right: 0%;
+    height: 30px;
+    width: 180px;
+    margin-top: -80px;
+    outline: none; 
+    border: 0;
+    border-radius: 5px;
+    font-weight: 400;  
+    font-size: 15px;
+    color: white; 
+    transition: all 0.3s; 
+    background: rgb(68, 194, 18);
+    font-family: Roboto;
+}
+.repeat_diff_words_class:hover {
+    cursor: pointer;
+    background: rgb(148, 245, 109);
+    color: rgb(38, 134, 0);    
+}
+.stat_table_class {
+    width: 100%;
+    font-family: Roboto;
+    margin-bottom: 30px;
+    margin-top: -30px;
+}
+.stat_table_class, .th_class, .tr_class, .td_class, 
+.td_class_0, .td_class_1, .td_class_2, .td_class_3, 
+.td_class_4, .td_class_5, .td_class_6, .td_class_7, 
+.td_class_8 {
+    border: solid 1px gray;
+    border-collapse: collapse;
+}
+.td_class_1, .td_class_2, .td_class_3, 
+.td_class_4, .td_class_5, .td_class_6, .td_class_7, 
+.td_class_8 {
+    padding-top: 3px;
+    color: red;     
+    background: rgb(253, 235, 235);
+}
+.td_class_1:hover, .td_class_2:hover, .td_class_3:hover, 
+.td_class_4:hover, .td_class_5:hover, .td_class_6:hover, .td_class_7:hover, 
+.td_class_8:hover {
+    cursor: pointer;
+    color: rgb(145, 0, 0);   
+    background: rgb(255, 204, 204); 
+    transition: all 0.3s;
+}
+.td_class {
+    text-align: center;
+    height: 20px;    
+}
+.th_class {
+    height: 30px;
+    background: rgb(192, 225, 255);
+}
+.td_class, .td_class_0 {
+    background: rgb(232, 252, 230);
+}
+.h_class {
+    width: 100%;
+    font-family: Roboto;
+    color: maroon;
+    text-align: center;
+}
+.h_class span {
+    color: red;
+}
